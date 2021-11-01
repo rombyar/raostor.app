@@ -5,9 +5,9 @@ npm install
 npm run build-image
 
 # Compile & run Website (v)
-gulp build
-npm run build
-npm run start-dev
+- gulp build
+- npm run build
+- npm run start-dev
 
 ## TESTING
 # E2E on WSL2
