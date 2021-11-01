@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Memberikan rekomendasi restoran terbaik adalah tujuan Kami" />
+    <meta name="theme-color" content="#22577A" />
+
+    <title>RAOSTOR Apps</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="/icons/icon-192x192.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
+</head>
+
+<body>
+    <a href="#mainContent" class="skip-link" title="Menuju ke konten">Menuju ke konten</a>
+
+    <app-nav></app-nav>
+
+    <app-hero></app-hero>
+
+    <main id="mainContent"></main>
+
+    <app-footer></app-footer>
+</body>
+
+<script>
+    /* SharedArrayBuffer updates in Android Chrome 88 and Desktop Chrome 92 */
+    if (!crossOriginIsolated) SharedArrayBuffer = ArrayBuffer;
+</script>
+
+</html>

@@ -1,0 +1,617 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    background-color: #fff;
+}
+
+.part__container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+    max-width: 1300px;
+}
+
+/* Bagian Navigasi */
+.part__nav {
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #22577A;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.part__brand:hover {
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.part__nav .part__brand a {
+    display: block;
+    padding: 10px 10px 10px 0px;
+    /* top right bottom left */
+    font-size: 1.4rem;
+    text-decoration: none;
+    font-weight: 550;
+    color: #fff;
+}
+
+.part__nav__icon {
+    display: inline-block;
+    min-width: 66px;
+    min-height: 44px;
+    cursor: pointer;
+    z-index: 2;
+    color: #333;
+    background-color: #eeeeee;
+    font-size: 1.3rem;
+    border: 1px solid #333;
+}
+
+.part__nav ul {
+    display: flex;
+    position: fixed;
+    background-color: #393e46;
+    top: 0;
+    bottom: 0;
+    right: -300px;
+    width: 300px;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.part__nav ul.open {
+    right: 0;
+    transition: .5s;
+}
+
+.part__nav ul li {
+    padding: 25px 0px 5px 10px;
+    list-style: none;
+}
+
+.part__nav ul li a {
+    color: white;
+    font-size: 1.0rem;
+    text-decoration: none;
+    padding: 25px 25px 25px 25px;
+    /* top right bottom left */
+}
+
+/** Bagian Sidebar */
+.part__sidebar__list {
+    z-index: 1;
+    transition: .5s;
+}
+
+.part__sidebar__list.open {
+    right: 0;
+    visibility: visible;
+    display: block;
+}
+
+/** Bagian list item navigasi */
+.part__list__item:hover {
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+/** Jumborton */
+.part__hero {
+    background-color: #fff;
+    background-blend-mode: multiply;
+    display: flex;
+    align-items: center;
+    min-height: 480px;
+    width: 100%;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+}
+
+.part__hero__inner {
+    margin: 0 auto;
+    max-width: 700px;
+}
+
+.part__hero__title {
+    font-weight: 500;
+    font-size: 36px;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.part__hero__tagline {
+    display: inline-block;
+    color: #333;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 300;
+    background-color: #fff;
+    padding-top: 6px;
+    padding-right: 8px;
+    padding-bottom: 6px;
+    padding-left: 8px;
+    opacity: 0.9;
+}
+
+/*
+ * main
+ */
+
+main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/*
+ * content
+ */
+
+.content {
+    padding: 32px;
+}
+
+/*
+ * explore
+ */
+
+.explore {
+    width: 100%;
+    margin: 60px auto;
+    text-align: center;
+}
+
+.explore__label {
+    font-size: 32px;
+    font-weight: lighter;
+}
+
+.explore__label::after {
+    content: '';
+    margin-top: 16px;
+    display: block;
+    border-bottom: 1px solid #eeeeee;
+}
+
+/*
+ * post
+ */
+
+.posts {
+    margin: 32px auto auto;
+    text-align: left;
+}
+
+/*
+ * post item
+ */
+
+.post__item {
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: #ecf0f1;
+}
+
+.post__item__content {
+    padding: 16px;
+}
+
+.post__item__thumbnail {
+    width: auto;
+    height: 250px;
+    min-width: 100%;
+    object-fit: cover;
+}
+
+.post__item__rating {
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #999;
+}
+
+.post__item__title {
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: 16px;
+    transition: 0.3s opacity;
+}
+
+.post__item__title:hover {
+    opacity: 0.5;
+}
+
+.post__item__title a {
+    text-decoration: none;
+    color: inherit;
+    padding: 25px 25px 25px 0px
+}
+
+.post__item__description {
+    margin-top: 16px;
+    font-size: 12px;
+    line-height: 1.5em;
+}
+
+
+/*
+ * footer
+ */
+
+footer {
+    background-color: #22577A;
+    padding: 2em;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+/** Label Post */
+.menu {
+    text-align: center;
+    position: relative
+}
+
+.menu a {
+    padding: 25px 0px 25px 0px;
+}
+
+.menu_label {
+    width: 200px;
+    color: #FFFFFF;
+    background-color: #22577A;
+    position: absolute;
+    padding: 45px 6px 20px 6px;
+    font-size: 18px;
+    top: -15px;
+    left: -70px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transform: rotate(-43.5deg);
+}
+
+/** Rating */
+.stars {
+    --star-size: 25px;
+    --star-color: #bdc3c7;
+    --star-background: #fc0;
+    --percent: calc(var(--rating) / 5 * 100%);
+    display: inline-block;
+    font-size: var(--star-size);
+    font-family: Times;
+    line-height: 1;
+}
+
+.stars::before {
+    content: "★★★★★";
+    letter-spacing: 3px;
+    background: linear-gradient(90deg, var(--star-background) var(--percent), var(--star-color) var(--percent));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/** Skip to Content */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 10px;
+    z-index: 100;
+    text-decoration: none;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+/** Focus sign */
+h1[tabindex="0"]:focus {
+    outline: 4px dashed orange;
+}
+
+p[tabindex="0"]:focus {
+    outline: 4px dashed orange;
+}
+
+div[tabindex="0"]:focus {
+    outline: 4px dashed orange;
+}
+
+img[tabindex="0"]:focus {
+    padding: 10px;
+}
+
+span[tabindex="0"]:focus {
+    outline: 4px dashed orange;
+}
+
+
+/*
+ * post detail
+ */
+#restaurant-main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    text-align: left;
+}
+
+.restaurant-detail-wrapper {
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: #ecf0f1;
+    border-radius: 5px;
+}
+
+.restaurant-info {
+    height: auto;
+    color: #333;
+    padding-bottom: 30px;
+}
+
+.restaurant-status {
+    height: auto;
+    width: 100%;
+}
+
+.restaurant-status h1 {
+    margin: 0 16px 0px 16px;
+    /* top right bottom left */
+    padding-top: 40px;
+    font-size: 34px;
+    font-weight: 100;
+}
+
+.restaurant-status h2 {
+    margin: 0 16px 0px 16px;
+    /* top right bottom left */
+    padding-bottom: 3px;
+    font-size: 18px;
+}
+
+.restaurant-status .stars {
+    margin: 0 16px 20px 16px;
+    /* top right bottom left */
+}
+
+.restaurant-status p {
+    margin: 0 16px 20px 16px;
+    /* top right bottom left */
+    line-height: 1.7em;
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+.restaurant-status ul {
+    margin: 0 16px 20px 16px;
+    /* top right bottom left */
+    line-height: 1.7em;
+    font-size: 15px;
+    font-weight: lighter;
+    list-style: none;
+}
+
+.restaurant-detail-more {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+div .restaurant-line {
+    margin: 0 16px 5px 16px;
+    width: 80px;
+    border-bottom: 5px solid #22577A;
+}
+
+div .restaurant-line-sub {
+    margin: 0 16px 5px 16px;
+    width: 80px;
+    border-bottom: 3px solid #22577A;
+}
+
+/*
+* Restaurant Review
+*/
+.restaurant-review {
+    height: auto;
+    width: 100%;
+}
+
+.restaurant-review h1 {
+    margin: 0 16px 0px 16px;
+    /* top right bottom left */
+    padding-top: 40px;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.restaurant-review h3 {
+    margin: 5px;
+    /* top right bottom left */
+    padding-bottom: 3px;
+    font-size: 15px;
+}
+
+.restaurant-review p {
+    margin: 5px;
+    /* top right bottom left */
+    line-height: 1.7em;
+    font-size: 12px;
+    font-weight: lighter;
+}
+
+.scrollbar-review {
+    margin-top: 50px;
+    height: 300px;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.show-review {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+    background-color: #fff;
+    padding: 12px;
+    margin: 0 16px 10px 16px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+
+.show-review > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+.show-review-desc {
+    grid-column: 1 / span 2;
+}
+
+.show-review-date {
+    font-size: 12px;
+    font-style: italic;
+    text-align: right;
+}
+
+.new-review {
+    background-color: #7ed6df;
+}
+
+/*
+* Form Input
+*/
+.form-label {
+    margin: 0 16px 0px 0px;
+}
+
+.form-review {
+    margin: 0 16px 10px 16px;
+    height: auto;
+}
+
+.input-mt {
+    margin-top: 25px;
+}
+
+.input-mb {
+    margin-bottom: 10px;
+}
+
+.button {
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: #22577A;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 4px;
+    color: #f8f8f8e5;
+}
+
+.button:active {
+    background: #26de81;
+    -webkit-box-shadow: inset 0px 0px 5px #2bcbba;
+    -moz-box-shadow: inset 0px 0px 5px #2bcbba;
+    box-shadow: inset 0px 0px 5px #2bcbba;
+    outline: none;
+}
+
+input {
+    width: 100%;
+    padding: 14px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8e5;
+}
+
+textarea {
+    width: 100%;
+    height: 80px;
+    padding: 14px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8e5;
+    resize: none;
+    font-family: "Roboto", sans-serif;
+}
+
+
+/*
+   Like
+*/
+.like {
+    font-size: 18px;
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    background-color: #db0000;
+    color: white;
+    border: 0;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.link {
+    padding: 14px;
+}
+
+.wrapword {
+    white-space: -moz-pre-wrap !important;
+    /* Mozilla, since 1999 */
+    white-space: -webkit-pre-wrap;
+    /* Chrome & Safari */
+    white-space: -pre-wrap;
+    /* Opera 4-6 */
+    white-space: -o-pre-wrap;
+    /* Opera 7 */
+    white-space: pre-wrap;
+    /* CSS3 */
+    word-wrap: break-word;
+    /* Internet Explorer 5.5+ */
+    word-break: break-all;
+    white-space: normal;
+}
+
+.loading-sel {
+    background-size: 1000%;
+    background-position: right;
+    animation: sweep 5s ease-in-out infinite alternate;
+}
+
+.link {
+    padding: 15px 7px 15px 7px;
+}
